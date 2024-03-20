@@ -1,0 +1,15 @@
+.container-fluid{
+    background-color: #06131f;
+}
+
+nav{
+    height: 116px;
+}
+
+nav img{
+    height: 62px;
+}
+
+.card{
+    background-color: #112030;
+}
