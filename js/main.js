@@ -8,7 +8,7 @@ createApp({
     },
 
     mounted() {
-        axios.get('disc-list.json')
+        axios.get('./server.php')
             .then(response => {
                 this.discs = response.data;
             });
