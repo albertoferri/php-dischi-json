@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="it" data-bs-theme=dark>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,17 +17,25 @@
 </head>
 <body>
 
-<div id="app">
+    <div id="app">
         <div class="container py-5">
-    
-           
-    
+            <div class="row row-gap-4">
+                <div class="col-4" v-for="disc in discs">
+                    <div class="card">
+                        <img :src="disc.poster" class="card-img-top" alt="Cover">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ disc.title }}</h5>
+                            <p class="card-text">{{ disc.author }}</p>
+                            <p class="card-text">{{ disc.year }}</p>
+                            <p class="card-text">{{ disc.genre }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
-
-    
     <script src="./js/main.js"></script>
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
